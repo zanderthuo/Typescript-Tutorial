@@ -1,12 +1,12 @@
-var person = {
-    name: 'Alexander',
-    age: 27,
-    hobbies: ['Sports', 'Cooking', 'Sleeping']
-};
-var favoriteActivities;
-favoriteActivities = ['Sports'];
-console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby);
+var userInput;
+var userName;
+userInput = 5;
+userInput = 'Max';
+if (typeof userInput === 'string') {
+    userName = userInput;
 }
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
+    // while (true) {}
+}
+generateError('An error occurred!', 500);
